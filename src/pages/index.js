@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from "react";
+import Landing from "../components/LandingPage";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 
@@ -13,6 +14,7 @@ const Home = () => {
     <Fragment>
       <Sidebar isOpen={isOpen} toggle={togglebar} />
       <Navbar toggle={togglebar} />
+      <Landing />
     </Fragment>
   );
 };
